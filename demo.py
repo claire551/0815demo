@@ -68,7 +68,7 @@ else:
     st.info("你選擇了其他")
 
 st.sidebar.write  ("##下拉選單")
-city=st.sidebar.selecbox("居住地", ("台北", "新北", "桃園", "台中", "台南", "高雄"))
+city=st.sidebar.selectbox("居住地", ("台北", "新北", "桃園", "台中", "台南", "高雄"))
 if city=="台北":
     st.sidebar.info("A")
 elif city=="新北":
@@ -86,3 +86,4 @@ b = st.number_input("num...",key='b')
 if st.button("相加"):
     st.write("###", a+b)
     
+
